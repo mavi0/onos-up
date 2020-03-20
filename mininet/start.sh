@@ -10,8 +10,6 @@ do
     sleep 1
 done
 
-cd onos-app-samples
-
 echo "Installing onos apps..."
 
 onos-app localhost activate org.onosproject.openflow
@@ -21,5 +19,4 @@ onos-app localhost install! ./ifwd/target/onos-app-ifwd-1.9.0-SNAPSHOT.oar
 
 echo "...Done!"
 
-cd ..
 docker run --rm -it --privileged --network 'host' --name mininet -e TOPO=topo.py -v ~/improved-bassoon:/topologies -e MN_FLAGS='' willfantom/mininet:ngcdi
