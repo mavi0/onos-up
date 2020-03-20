@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  #  Start onos.. docker run -dit -p 8181:8181 -p 6653:6653 -p 6640:6640 -p 8101:8101 -p 9876:9876 -p 6633:6633 mavi0/container-onos-opa:latest
+  onos-controller:
+    container_name: onos-controller
+    image: mavi0/container-onos-opa:latest
+    ports:
+      - 8181:8181
+      - 6653:6653
+      - 6640:6640
+      - 8101:8101 
+      - 9876:9876 
+      - 6633:6633
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
