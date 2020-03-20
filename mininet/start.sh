@@ -18,5 +18,11 @@ onos-app localhost activate org.onosproject.imr
 onos-app localhost install! ./ifwd/target/onos-app-ifwd-1.9.0-SNAPSHOT.oar 
 
 echo "...Done!"
+echo "Cloning topology..."
 
-docker run --rm -it --privileged --network 'host' --name mininet -e TOPO=topo.py -v ~/improved-bassoon:/topologies -e MN_FLAGS='' willfantom/mininet:ngcdi
+rm -rf improved-bassoon/
+git clone git@github.com:mavi0/improved-bassoon.git
+
+cd improved-bassoon
+
+docker run --rm -it --privileged --network 'host' --name mininet -e TOPO=topo.py -v $(pwd):/topologies -e MN_FLAGS='' willfantom/mininet:ngcdi

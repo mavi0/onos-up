@@ -50,8 +50,7 @@ tmux splitw -v -p 75
 
 # select pane 3, set to api root
 tmux selectp -t 3
-tmux send-keys "cd ~/improved-bassoon/goperf/" C-m
-tmux send-keys "python3  tempIperf.py"
+tmux send-keys "cd iperf;bash start.sh" C-m
 
 tmux splitw -v -p 50
 tmux selectp -t 4
