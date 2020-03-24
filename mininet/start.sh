@@ -35,4 +35,4 @@ git clone https://github.com/mavi0/improved-bassoon.git
 
 cd improved-bassoon
 
-docker run --rm -it --privileged --network 'host' --name mininet -e TOPO=topo.py -v ~/improved-bassoon:/topologies -e MN_FLAGS='' willfantom/mininet:ngcdi
+docker run --rm -it --privileged --network 'host' --name mininet -e TOPO=topo.py -v $(pwd):/topologies -e MN_FLAGS='' willfantom/mininet:ngcdi
