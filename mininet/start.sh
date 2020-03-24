@@ -31,7 +31,7 @@ echo "...Done!"
 echo "Cloning topology..."
 
 rm -rf improved-bassoon/
-git clone git@github.com:mavi0/improved-bassoon.git
+git clone https://github.com/mavi0/improved-bassoon.git
 
 cd improved-bassoon
 
