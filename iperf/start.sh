@@ -12,7 +12,7 @@ done
 
 echo "Cloning iperf scripts..."
 rm -rf improved-bassoon
-git clone git@github.com:mavi0/improved-bassoon.git
+git clone https://github.com/mavi0/improved-bassoon.git
 cd improved-bassoon/goperf
 echo "Press any key to start iperf..."
 read -n 1
