@@ -12,4 +12,12 @@ done
 
 echo "Connecting to ONOS CLI..."
 
-onos karaf@localhost
+echo "Installing onos tools..."
+rm -rf onos/
+git clone https://gerrit.onosproject.org/onos 
+cd onos
+git reset --hard 3bc7060466c0d0da72799455ac2eb44048e1bd3d
+
+cd ..
+
+onos/tools/test/bin/onos karaf@localhost

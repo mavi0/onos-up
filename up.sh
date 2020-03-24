@@ -4,9 +4,11 @@
 
 sudo mn -c
 
-docker stop --force onos-controller
-docker stop --force mininet
-docker stop --force onos-reroute-api
+echo "Cleaning up Docker..."
+
+docker stop onos-controller
+docker stop mininet
+docker stop onos-reroute-api
 
 docker rm --force onos-controller
 docker rm --force mininet
