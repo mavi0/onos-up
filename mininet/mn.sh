@@ -1,0 +1,1 @@
+docker run --rm -it --privileged --network 'host' --name mininet -e TOPO=topo.py -v $(pwd)/improved-bassoon:/topologies -e MN_FLAGS='' willfantom/mininet:ngcdi
