@@ -19,5 +19,5 @@ cd onos
 git reset --hard 3bc7060466c0d0da72799455ac2eb44048e1bd3d
 
 cd ..
-echo "It's 'karaf'!"
-onos/tools/test/bin/onos karaf@localhost
+
+bash up.sh

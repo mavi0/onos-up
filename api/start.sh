@@ -12,4 +12,4 @@ done
 
 echo "Starting Reroute API..."
 
-docker-compose up
+bash up.sh

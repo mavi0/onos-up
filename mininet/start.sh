@@ -33,4 +33,4 @@ echo "Cloning topology..."
 rm -rf improved-bassoon/
 git clone https://github.com/mavi0/improved-bassoon.git
 
-bash mn.sh
+bash up.sh
