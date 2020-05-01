@@ -22,7 +22,7 @@ tmux new-session -d -s $session
 
 # Select pane 1, start onos
 tmux selectp -t 1 
-tmux send-keys "cd onos;docker-compose up" C-m 
+tmux send-keys "cd onos;bash start.sh" C-m 
 
 # Split pane 1 h, mininet
 tmux splitw -h -p 70
